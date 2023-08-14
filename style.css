@@ -1,0 +1,67 @@
+body{
+    background-color: #393e46;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-rows:auto auto auto auto ;
+    
+}
+.main{
+    display: grid;
+    grid-template-columns:auto auto auto ;
+}
+.header{
+    text-align: center;
+    color: #4ecca3;
+    font-weight: 400;
+    font-family: Lobster, cursive;
+    font-size: 3rem;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove{
+    50%{text-shadow: 10px 20px 30px #4ecca3;}
+}
+
+.dice{
+    color: #4ecca3;
+    font-size: 30px;
+    justify-self: center;
+}
+button{
+    background-color:rgb(145, 207, 226) ;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 9px;
+    position: relative;
+    left: 45%;
+}
+footer{
+    color: #4ecca3;
+    text-align: right;
+}
+.dice1{
+height: 90px;
+width: 90px;
+}
+.hidden{
+    visibility: hidden;
+}
+@media(maxWidth:650px){
+    .container{
+        display: grid;
+        height: auto;
+        width: 100%;
+        grid-template-rows:auto auto auto auto ;
+        
+    }
+    .main{
+        display: grid;
+        grid-template-rows:auto auto auto ;
+    }
+    button{
+        position: relative;
+        left:40% ;
+    }
+}
